@@ -13,8 +13,8 @@ AI エンジニア / 修士課程（28卒）— 岐阜大学大学院 自然科�
 #### About
 
 画像AI・LLMを扱い、XRとAIの融合を研究。  
-Apple Vision Pro などの XR デバイスを活用し、現実空間とAIを接続するシステムを研究・開発しています。  
-コンピュータビジョン・3D点群・医用画像処理を組み合わせた応用研究に取り組んでいます。
+Apple Vision Pro などの XR デバイスを活用し、現実空間とAIを接続するシステムを研究中。  
+コンピュータビジョン・3D点群・医用画像処理など画像AIを中心に最新技術に触れることを好んでいる。
 
 `画像認識` `コンピュータビジョン` `LLM` `XR` `Apple Vision Pro` `3D点群処理`
 
@@ -31,11 +31,11 @@ Apple Vision Pro などの XR デバイスを活用し、現実空間とAIを接
 
 | # | Project | Year |
 |---|---------|------|
-| R-000 | [生徒支援AI「ユメカタリ」](https://github.com/Mugi323/student-support-ai) — LLMで生徒の深刻な悩みを早期検知・教師負担軽減。**ユメカタリ生成AIコンテスト 開発部門優秀賞** | 2024 |
 | R-001 | [顔認証を用いたエッジAI](https://github.com/KIMUK0U/Bus-Occupant-Detection) — エッジデバイスでリアルタイム顔認証 | 2024 |
 | R-002 | [XR空間でのCTスライス実物大可視化](https://github.com/KIMUK0U/VisionOS-CTSlice-Viewer) — Apple Vision Pro でCT画像をリアルスケール投影 | 2024–2025 |
 | R-003 | [CT由来3D解剖モデルのAR重畳](https://github.com/KIMUK0U/CTAndPhantomRegistrationProject) — 実物頭部模型にセグメンテーション3DモデルをAR重畳 | 2025 |
-| R-004 | [PointLLMを用いた解剖構造対話システム](https://github.com/KIMUK0U/InteractiveAnatomyChat) — 3D点群解剖モデルとLLMで対話学習 | 2025–2026 |
+| R-004 | [生徒支援AI「ユメカタリ」](https://github.com/Mugi323/student-support-ai) — LLMで生徒の深刻な悩みを早期検知・教師負担軽減。**ユメカタリ生成AIコンテスト 開発部門優秀賞** | 2025 |
+| R-005 | [PointLLMを用いた解剖構造対話システム](https://github.com/KIMUK0U/InteractiveAnatomyChat) — 3D点群解剖モデルとLLMで対話学習 | 2025–2026 |
 
 ---
 
@@ -55,4 +55,4 @@ Apple Vision Pro などの XR デバイスを活用し、現実空間とAIを接
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white)
 
-経験あり: `3DGS` `Apple DepthPro` `DICOM処理` `モデリング`
+経験あり: `顔認証` `点群処理` `3DGS` `Apple DepthPro` `DICOM処理` `メッシュ処理` `レジストレーション`
