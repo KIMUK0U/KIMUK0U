@@ -16,7 +16,7 @@ AI エンジニア / フルスタックエンジニア / 修士課程（28卒）
 
 大学院では、Apple Vision Pro などの XR デバイスと画像認識・LLM を組み合わせ、現実空間とAIをつなぐシステムを研究しています。主な題材は医用画像で、CT 画像や 3D 点群の解剖モデルを XR 空間に表示し、操作したり対話したりできるようにしています。
 
-MirumeAI では、果樹の摘果・剪定を AI が支援する Web アプリを開発しています。モデルの学習から、画面（React）・API（FastAPI）、AWS 上のサーバーレス構成まで手がけています。
+MirumeAI では、果樹の摘果・剪定を AI が支援する Web アプリを開発しています。モデルの学習から、画面・API（TypeScript・Python）、AWS 上のサーバーレス構成まで手がけています。
 
 `画像認識` `コンピュータビジョン` `LLM` `XR` `Apple Vision Pro` `3D点群処理`
 
@@ -38,20 +38,20 @@ MirumeAI では、果樹の摘果・剪定を AI が支援する Web アプリ�
 | R-003 | [CT由来3D解剖モデルのAR重畳](https://github.com/KIMUK0U/CTAndPhantomRegistrationProject) — 実物頭部模型にセグメンテーション3DモデルをAR重畳 | 2025 |
 | R-004 | [生徒支援AI「ユメカタリ」](https://github.com/Mugi323/student-support-ai) — LLMで生徒の深刻な悩みを早期検知・教師負担軽減。**ユメカタリ生成AIコンテスト 開発部門優秀賞** | 2025 |
 | R-005 | [PointLLMを用いた解剖構造対話システム](https://github.com/KIMUK0U/InteractiveAnatomyChat) — 3D点群解剖モデルとLLMで対話学習 | 2025–2026 |
-| R-006 | **果樹の摘果・剪定アノテーションと継続学習**（MirumeAI・非公開） — AI が果実・枝の輪郭と房ごとの「残す順位」を下書きし、人が直した分で AI を継続学習。画面と構成図は [Portfolio](https://KIMUK0U.github.io) に掲載 | 2026 |
+| R-006 | **果樹の摘果・剪定アノテーションアプリ**（MirumeAI・非公開） — AI が果実・枝の輪郭と房ごとの「残す順位」を下書きし、人が直した分で AI が学び直す。画面と構成図は [Portfolio](https://KIMUK0U.github.io) に掲載 | 2026 |
 
 ---
 
 #### MirumeAI：果樹アノテーションアプリ
 
-果樹の写真を開くと AI が摘果の順位や剪定の枝を下書きし、人が PC やスマホで直してサーバーへ保存する Web アプリ。保存した修正データで AI を継続学習し、組織ごとに AI の版を持って切替・巻き戻しができる。リポジトリは非公開。
+果樹の写真を開くと AI が摘果の順位や剪定の枝を下書きし、人が PC やスマホで直してサーバーへ保存する Web アプリ。保存した修正データで AI を学び直し、組織ごとに AI の版を持って切替・巻き戻しができる。リポジトリは非公開。
 
 **AWS の活用**（すべて AWS CDK / TypeScript で定義）
 
-- **CloudFront** を唯一の入口にし、画面（**S3**）・データ管理 API（**Lambda** + FastAPI）・AI 推論（**Lambda** コンテナ）へパスで振り分け
+- **CloudFront** を唯一の入口にし、画面（**S3**）・データ管理 API（**Lambda**）・AI 推論（**Lambda** コンテナ）へパスで振り分け
 - **Aurora MySQL Serverless v2**（未使用時は 0 ACU で停止）で組織・ラベル・モデルの版を管理
 - 画像は **S3** の署名付き URL で直接アップロードし、Lambda を通さない
-- 継続学習は **SageMaker** の学習ジョブで、使うときだけ動かす
+- AI の学び直しは **SageMaker** の学習ジョブで、使うときだけ動かす
 - NAT・ALB・WAF などの常時課金を置かないサーバーレス構成で、月 3,000 円以内が目標
 
 ---
@@ -70,7 +70,6 @@ MirumeAI では、果樹の摘果・剪定を AI が支援する Web アプリ�
 ![visionOS](https://img.shields.io/badge/visionOS-000000?style=flat-square&logo=apple&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white)
