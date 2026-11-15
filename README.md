@@ -2,7 +2,7 @@
 
 ### Kota KIMURA
 
-AI エンジニア / 修士課程（28卒）— 岐阜大学大学院 自然科学技術研究科
+AI エンジニア / フルスタックエンジニア / 修士課程（28卒）— 岐阜大学大学院 自然科学技術研究科
 
 [Portfolio](https://KIMUK0U.github.io) &nbsp;·&nbsp; [Email](mailto:kt2g.kimura@gmail.com)
 
@@ -12,8 +12,11 @@ AI エンジニア / 修士課程（28卒）— 岐阜大学大学院 自然科�
 
 #### About
 
-医用画像認識・LLMを扱い、XRとAIの融合を研究。  
-Apple Vision Pro などの XR デバイスを活用し、現実空間とAIを接続するシステムを研究。  
+画像AIとXRで、現実空間とAIをつなぐ。
+
+大学院では、Apple Vision Pro などの XR デバイスと画像認識・LLM を組み合わせ、現実空間とAIをつなぐシステムを研究しています。主な題材は医用画像で、CT 画像や 3D 点群の解剖モデルを XR 空間に表示し、操作したり対話したりできるようにしています。
+
+MirumeAI では、果樹の摘果・剪定を AI が支援する Web アプリを開発しています。モデルの学習から、画面（React）・API（FastAPI）、AWS 上のサーバーレス構成まで手がけています。
 
 `画像認識` `コンピュータビジョン` `LLM` `XR` `Apple Vision Pro` `3D点群処理`
 
@@ -22,7 +25,7 @@ Apple Vision Pro などの XR デバイスを活用し、現実空間とAIを接
 #### Experience
 
 - **岐阜大学大学院 自然科学技術研究科** — 修士課程
-- **[MirumeAI](https://mirumeai.com/)** — AI エンジニア（アルバイト）
+- **[MirumeAI](https://mirumeai.com/)** — AI エンジニア / フルスタックエンジニア（アルバイト）
 
 ---
 
